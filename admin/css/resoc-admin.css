@@ -1,0 +1,60 @@
+.resoc-before-after {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resoc-before-after .before, .resoc-before-after .after {
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.resoc-before-after h3 {
+  margin-top: 0;
+}
+
+.resoc-before-after div {
+  margin-right: 16px;
+}
+
+.resoc-before-after .before-after-link {
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.resoc-before-after img {
+  max-width: 250px;
+}
+
+.resoc-template-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.resoc-template {
+  margin-right: 16px;
+}
+
+.resoc-template-illustration {
+  max-width: 250px;
+  height: auto;
+}
+
+.resoc-media-field .media-thumbnail {
+  max-width: 64px;
+  max-height: 64px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.resoc-media-field .hidden-media-thumbnail {
+  display: none;
+}
+
+.resoc-title-error {
+  color: red;
+}
+
+.resoc-narrow-section {
+  max-width: 600px;
+}

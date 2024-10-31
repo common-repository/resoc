@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/icon?family=Roboto&display=swap');
+
+.container {
+  background-color: grey;
+  display: flex;
+  align-items: stretch;
+  color: {{ textColor }};
+}
+
+.side {
+  background-color: {{ backgroundColor }};
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+}
+
+.side-content {
+  margin-top: 16px;
+  flex: 1;
+}
+
+#title {
+  margin-top: 0;
+  font-size: 60px;
+  font-family: Roboto;
+  height: 80%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 48px;
+  font-family: Roboto;
+}
+
+.main {
+  flex: 1.8;
+  position: relative;
+}
+
+.main-image {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.extended-background-ltr {
+  position: absolute;
+  left: -0.1vw;
+  top: 0;
+  background-color: {{ backgroundColor }};
+  width: 50px;
+  height: 100%;
+  clip-path: polygon(
+    0 0, /* left top */
+    100% 0, /* right top */
+    0 100% /* left bottom */
+  );
+}
+
+[dir=rtl] .extended-background-ltr {
+  display: none;
+}
+
+.extended-background-rtl {
+  position: absolute;
+  right: -0.1vw;
+  top: 0;
+  background-color: {{ backgroundColor }};
+  width: 50px;
+  height: 100%;
+  clip-path: polygon(
+    0 0, /* left top */
+    100% 0, /* right top */
+    100% 100% /* right bottom */
+  );
+}
+
+[dir=ltr] .extended-background-rtl {
+  display: none;
+}
